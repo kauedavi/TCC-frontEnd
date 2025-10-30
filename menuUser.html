@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/menuUserStyle.css">
 </head>
+
 <body>
     <header>
-        <div class="logo"><img src="img/logopdr.png" alt="" ></div>
+        <div class="logo"><img src="img/logopdr.png" alt=""></div>
         <div class="busca">
             <button>Procurar vagas</button>
             <button>Buscar Empresas</button>
             <button>Buscar Usuários</button>
         </div>
         <div class="profile">
-            <img src="https://marketplace.canva.com/gJly0/MAGDkMgJly0/1/tl/canva-user-profile-icon-vector.-avatar-or-person-icon.-profile-picture%2C-portrait-symbol.-MAGDkMgJly0.png" alt="">
+            <img src="https://marketplace.canva.com/gJly0/MAGDkMgJly0/1/tl/canva-user-profile-icon-vector.-avatar-or-person-icon.-profile-picture%2C-portrait-symbol.-MAGDkMgJly0.png"
+                alt="">
             <button>Sair</button>
         </div>
     </header>
@@ -23,14 +26,79 @@
         <div class="buscarVagas">
             <h2>Olá, User!</h2>
             <p>Vamos Começar?</p>
-            <button>Buscar vagas</button>
+            <button class="btnBuscarVagas">Buscar vagas</button>
+
+            <!-- Container centralizado para busca de vagas -->
+            <div class="areaBuscaVagas">
+                <h3>Digite a vaga que procura:</h3>
+                <input type="text" placeholder="Ex: Desenvolvedor, Designer, Analista...">
+            </div>
         </div>
+        </div>
+
         <div class="buscarEmpresas">
             <h3>Já tem uma empresa em mente?</h3>
             <input type="text" placeholder="Digite aqui o nome da empresa...">
             <br>
             <button>Bucar Empresas</button>
         </div>
+
+        <div class="cardEmpresa">
+            <div class="star">
+                <img src="img/star.png" alt="">
+                <img src="img/star.png" alt="">
+                <img src="img/star.png" alt="">
+            </div>
+            <div class="profileCard">
+                <img src="https://marketplace.canva.com/gJly0/MAGDkMgJly0/1/tl/canva-user-profile-icon-vector.-avatar-or-person-icon.-profile-picture%2C-portrait-symbol.-MAGDkMgJly0.png"
+                    alt="">
+            </div>
+            <div class="inf card">
+                <p class="name">empresa tal</p>
+                <p class="date">n sei</p>
+            </div>
+        </div>
+
+        <div class="cardVaga">
+            <div class="star">
+                <img src="img/star.png" alt="">
+                <p>Oportunidade destacada</p>
+                <img src="img/star.png" alt="">
+            </div>
+
+            <div class="separar">
+                <div class="profileCard">
+                    <div class="infEmp">
+                        <img src="https://marketplace.canva.com/gJly0/MAGDkMgJly0/1/tl/canva-user-profile-icon-vector.-avatar-or-person-icon.-profile-picture%2C-portrait-symbol.-MAGDkMgJly0.png"
+                            alt="">
+                        <p>Empresa ABC SA</p>
+                    </div>
+                    <button>Ver Empresa</button>
+                </div>
+
+                <div class="alinh">
+                    <div class="inf">
+                        <p class="vaga"><strong>Desenvolvedor Node.js Sênior</strong></p>
+                    </div>
+                    <div class="inf">
+                        <p class="comptEx">
+                            <strong>Competências Exigidas:</strong><br>
+                            <li>Liderança</li>
+                            <li>Node.js</li>
+                        </p>
+                    </div>
+                    <div class="inf">
+                        <p class="comptOp">
+                            <strong>Competências Diferenciais:</strong><br>
+                            <li>Exel</li>
+
+                            <li>Trabalho em Equipe</li>
+                        </p>
+                    </div>
+                    <button class="detalhes">Ver detalhes</button>
+                </div>
+            </div>
+
     </main>
     <footer>
         <div class="logo"><img src="img/logopdr.png" alt=""></div>
@@ -42,5 +110,7 @@
         </div>
 
     </footer>
+    <script src="scripts/menuUserScript.js"></script>
 </body>
+
 </html>
